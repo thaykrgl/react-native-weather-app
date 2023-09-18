@@ -9,48 +9,35 @@ import {
 } from "react-native";
 import IconText from "../components/IconText";
 
-const {
-  container,
-  cityName,
-  cityText,
-  countryName,
-  populationWrapper,
-  populationText,
-  riseSetWrapper,
-  riseSetText,
-  imageLayout,
-  rowLayout,
-} = styles;
-
 const City = () => {
   return (
-    <SafeAreaView style={container}>
+    <SafeAreaView style={styles.container}>
       <ImageBackground
         source={require("../../assets/city-background.jpg")}
-        style={imageLayout}
+        style={styles.imageLayout}
       >
-        <Text style={[cityName, cityText]}>London</Text>
-        <Text style={[countryName, cityText]}>UK</Text>
-        <View style={[populationWrapper, rowLayout]}>
+        <Text style={[styles.cityName, styles.cityText]}>London</Text>
+        <Text style={[styles.countryName, styles.cityText]}>UK</Text>
+        <View style={[styles.populationWrapper, styles.rowLayout]}>
           <IconText
             iconName={"user"}
             iconColor={"red"}
             bodyText={"8000"}
-            bodyTextStyles={populationText}
+            bodyTextStyles={styles.populationText}
           />
         </View>
-        <View style={[riseSetWrapper, rowLayout]}>
+        <View style={[styles.riseSetWrapper, styles.rowLayout]}>
           <IconText
             iconName={"sunrise"}
             iconColor={"white"}
             bodyText={"10:46:58pm"}
-            bodyTextStyles={riseSetText}
+            bodyTextStyles={styles.riseSetText}
           />
           <IconText
             iconName={"sunset"}
             iconColor={"white"}
             bodyText={"17:28:15pm"}
-            bodyTextStyles={riseSetText}
+            bodyTextStyles={styles.riseSetText}
           />
         </View>
       </ImageBackground>
