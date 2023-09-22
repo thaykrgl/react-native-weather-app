@@ -1,4 +1,3 @@
-import React from "react";
 import CurrentWeather from "../screens/CurrentWeather";
 import UpcomingWeather from "../screens/UpcomingWeather";
 import City from "../screens/City";
@@ -56,7 +55,6 @@ const Tabs = ({ weather }) => {
       </Tab.Screen>
       <Tab.Screen
         name={"City"}
-        component={City}
         options={{
           tabBarIcon: ({ focused }) => (
             <Feather
@@ -66,7 +64,9 @@ const Tabs = ({ weather }) => {
             />
           ),
         }}
-      />
+      >
+        {() => <City weatherData={weather.city} />}
+      </Tab.Screen>
     </Tab.Navigator>
   );
 };
