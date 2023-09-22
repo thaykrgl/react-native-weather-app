@@ -82,6 +82,5 @@ If you'd like to contribute to this project, please follow these steps:
 
 If you have any questions or feedback regarding the project, feel free to reach out:
 
-- Taha Aykiroglu
 - tahaaykiroglu99@gmail.com
 - [LinkedIn](https://www.linkedin.com/in/tahaaykiroglu/)
