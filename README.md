@@ -78,7 +78,7 @@ If you'd like to contribute to this project, please follow these steps:
    ```
 4. Create a pull request, and your changes will be reviewed.
 
-## Contact
+## Contact
 
 If you have any questions or feedback regarding the project, feel free to reach out:
 
